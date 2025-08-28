@@ -1,21 +1,9 @@
-let modeSelect = document.querySelector("mode-switcher");
-let curMode="light";
-modeSelect.addEventListener("dblclick", ()=>{
-    if (curMode=="light"){
 
-        document.querySelector("body").style.backgroundColor="black";
-        curMode="dark"
-        console.log("dark.");
-    }
-    else{
-        
-        document.querySelector("body").style.backgroundColor="pink";
-        curMode="light";
-        console.log("light.");
-    }
-    
+
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 }
-);
 
 //FOR ACCORDION 
 var acc = document.getElementsByClassName("accordion");
